@@ -8,10 +8,6 @@
 :root {
     --color_fondo-principal:#095090;
     --color_texto-principal:#f4f4f4;
-  --primario: #095090;
-  --fondo: #f4f4f4;
-  --texto: #222;
-  --accent: #0b7bd6;
 }
 img{
     width: 90px;
@@ -22,98 +18,206 @@ header{
     height: 100px;
     position: fixed;
     z-index: 100;
-    
 }
 .container_header{
     width: 100%;
     height: 100%;
     display: flex;
     background-color: var(--color_fondo-principal);
-    
-    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
 
 }
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 50%;
     margin: 10px;
     position: relative;
     left: 9%;
+    color: var(--color_texto-principal);
 }
 .logo a img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
-
-body.registro-body, body{
-    background: var(--fondo);
-    color: var(--texto);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .container_header .logo{
-    display: flex;
-    align-items:center;
-    gap:8px;
-    color: white;
-  
-  }
-  
-  .registro-main{
-    min-height: calc(100vh - 120px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding: 80px 16px;
-  }
-  
-  .registro-card{
+.login{
+    width: 50%;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    font-size: 20px;
+}
+.login a{
+    color: black;
+    background-color: var(--color_texto-principal);
+    padding: 10px;
+    border-radius: 10px;
+}
+.container_main{
     width: 100%;
-    max-width: 520px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
-    padding: 28px;
-    margin-top: 50px;
-  }
-  
-  .registro-card h1{
-    margin-bottom: 6px;
-    color: var(--primario);
-  }
-  .subtitulo{color: #666; margin-bottom: 18px}
-  
-  form .campo{margin-bottom: 14px}
-  form label{display:block; font-weight:600; margin-bottom:6px}
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"],
-  form input[type="tel"]{
-    width:100%;
-    padding:10px 12px;
-    border:1px solid #d6d6d6;
-    border-radius:6px;
-    font-size:15px;
-  }
-  
-  .campo.doble{
-    display:flex;
-    gap:12px}
-  
-  .btn-primario{
-    background: var(--primario);
-    color:white;
-    border:none;
-    padding:10px 16px;
-    border-radius:8px;
-    cursor:pointer;
-  }
-  .link-login{color:var(--accent); font-size:14px}
-  
-  @media (max-width:520px){
-    .campo.doble{flex-direction:column}
-    .registro-card{padding:18px}
-  }
-  
+    position: relative;
+    top: 100px;
+    background-color: var(--color_texto-principal);
+}
+.presentacion_main{
+    height: 600px;
+    background-color: var(--color_fondo-principal);
+}
+.presentacion_servicios{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    text-align: center;
+    height: 1800px;
+}
+
+.presentacion_parte1{
+    height: 50%;
+    position: relative;
+    top: 90px;
+}
+.presentacion_parte2{
+    height: 50%;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.presentacion_parte2 a{
+    color: black;
+    position: relative;
+    top: 30%;
+}
+.presentacion_parte1 h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    color: var(--color_texto-principal);
+}
+.presentacion_parte1 p{
+    text-align: center;
+    width: 80%;
+    font-size: 25px;
+    position: relative;
+    top: 80px;
+    left: 10%;
+    color: #c3c3c3;
+}
+.frace_principal{
+    text-align: center;
+    height: 12%;
+}
+.frace_principal h2 strong{
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    position: relative;
+    top: 100px;
+}
+.presentacion_servicios2{
+    display: flex;
+    height: 29.3%;
+}
+.presentacion_servicios_parte1_etiqueta1{
+    width: 30%;
+    height: 90%;
+    border: 1px solid var(--color_fondo-principal);
+    border-radius:20px ;
+    margin: 10px;
+    position: relative;
+    left: 3%;
+}
+
+.presentacion_servicios_parte1_etiqueta1 h3{
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    font-display: auto;
+}
+.presentacion_servicios_parte1_etiqueta1 img{
+    height: 50%;
+}
+.distribucion_etiqueta{
+    height: 50%;
+}
+
+.texto_tarjetas_oferta{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+.texto_tarjetas_oferta h2{
+    text-align: center;
+    font-size: 28px;
+    padding: 13px;
+}
+.texto_tarjetas_oferta h3{
+    text-align: justify;
+    font-size: 16px;
+    position: relative;
+    left: 8%;
+    
+}
+.imagenes_portatil img{
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top:25%;
+}
+.imagen_telefono img{
+    width: 120px;
+    height: 185px;
+    position: relative;
+    top:20%;
+}
+.imagen_tablet img{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top: 30%;
+}
+.imagen_impresora img{
+    width: 250px;
+    height: 230px;
+    position: relative;
+    top: 10%;
+}
+.imagen_monitor img{
+    width: 210px;
+    height: 180px;
+    position: relative;
+    top: 28%;
+}
+.imagen_mouse img{
+    width: 200px;
+    height: 210px;
+    position: relative;
+    top: 20%;
+}
+.imagen_lavadora img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 20%;
+}
+.imagen_sonido img{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 10%;
+}
+.imagen_televisor img{
+    width: 250px;
+    height: 190px;
+    position: relative;
+    top: 25%;
+}
+
+
+
 
 
 
