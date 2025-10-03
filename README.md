@@ -11,7 +11,7 @@ Tech Innovation es una tienda virtual especializada en la venta de dispositivos 
 | Nombre | Código | Correo |
 |--------|--------|--------|
 | Joshua Inciarte | 192562 | jainciarteg@ufpso.edu.co |
-| Juan Jaime | # | - |
+| Juan Jaime | 192564 | yacruzd@ufpso.edu.co |
 | Yonathan Diaz | # | - |
 
 **Carrera:** Ingeniería de Sistemas  
@@ -19,8 +19,8 @@ Tech Innovation es una tienda virtual especializada en la venta de dispositivos 
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5** - Estructura y contenido del sitio web
-- **CSS3** - Diseño y estilos visuales
+- **HTML** - Estructura y contenido del sitio web
+- **CSS** - Diseño y estilos visuales
 
 ## 🌟 Características del Sitio
 
@@ -41,12 +41,13 @@ El sitio web cuenta con las siguientes secciones:
 Desarrollo-Web-y-Mantenimiento/
 │
 ├── index.html
+├── inicio.html
 ├── login.html
 ├── registro.html
-├── contacto.html
-├── css/
-│   └── styles.css
-├── img/
+├── registro.css
+├── Style.css
+├── styleinicio.css
+├── imgen/
 │   └── (imágenes del proyecto)
 └── README.md
 ```
