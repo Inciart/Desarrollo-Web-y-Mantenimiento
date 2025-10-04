@@ -11,7 +11,7 @@ Tech Innovation es una tienda virtual especializada en la venta de dispositivos 
 | Nombre | Código | Correo |
 |--------|--------|--------|
 | Joshua Inciarte | 192562 | jainciarteg@ufpso.edu.co |
-| Juan Jaime | 192564 | yacruzd@ufpso.edu.co |
+| Juan Jaime | 192609 | jsjaimeq@ufpso.edu.co |
 | Yonathan Diaz | # | - |
 
 **Carrera:** Ingeniería de Sistemas  
