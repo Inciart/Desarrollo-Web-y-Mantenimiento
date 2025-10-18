@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos globales aplicados a todos los elementos */
+* {
+    margin: 0; /* Quita márgenes predeterminados */
+    padding: 0; /* Quita relleno predeterminado */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+    text-decoration: none; /* Quita subrayados de enlaces */
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente 'Poppins' a todo el documento */
+}
+
+/* Variables de colores y tamaño de fuente definidas en :root para fácil acceso */
+:root {
+    --color_text-primary: #8C63A7; /* Verde primario */
+    --color_text-secundary: #101E2C; /* Azul oscuro */
+    --color_text-tertiary:  #EFF0EF; /* Establece el color de fondo general para el diseño, proporcionando un tono claro y suave */
+; /* Verde oscuro */
+    --lowText_font_size: 16px; /* Tamaño de fuente base */
+    --main_color-primary: #4A90E2; /* Define el color primario del tema, utilizado para elementos destacados y acentos */
+	--main_color-secundary: #5FB6D4; /* Define el color secundario, que puede ser usado para elementos secundarios o complementarios */
+	--background-color: #EFF0EF; /* Establece el color de fondo general para el diseño, proporcionando un tono claro y suave */
+	--text_size_title: 40px; /* Define el tamaño de fuente para los títulos principales, asegurando que sean prominentes */
+	--text_title_card: 24px; /* Establece el tamaño de fuente para los títulos de tarjetas, permitiendo diferenciación en el contenido */
+	--text_title_cardv2: 20px; /* Define un tamaño de fuente alternativo para otro tipo de títulos de tarjetas, proporcionando flexibilidad en el diseño */
+	--text_paragraph: 16px; /* Establece el tamaño de fuente para el texto de párrafo, asegurando que sea legible y cómodo de leer */
+	--box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
+}
+
+/* Header */
+header {
+    width: 100%; /* Ancho completo */
+    height: 100px; /* Altura fija */
+    position: fixed; /* Fijo en la parte superior de la pantalla */
+    z-index: 100; /* Prioridad alta para superponer elementos */
+    background: #ADD8E6; /* Color de fondo verde */
+}
+
+/* Contenedor principal del encabezado */
+.container_header {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    height: 100%; /* Altura completa del encabezado */
+    margin: auto; /* Centra horizontalmente */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Espacia elementos entre los extremos */
+    align-items: center; /* Alinea elementos verticalmente al centro */
+    padding: 0px 20px; /* Relleno lateral de 20px */
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex; /* Usa flexbox para alinear elementos hijos */
+    align-items: center; /* Alinea verticalmente al centro */
+    position: relative; /* Posicionamiento relativo para ajustes si es necesario */
+    z-index: 1; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    width: 100px; /* Ancho fijo de la imagen del logo */
+}
+
+/* Contenedor del menú principal */
+.menu {
+    display: flex; /* Usa flexbox para alinear elementos en fila */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+/* Estilo del contenedor de navegación dentro del menú */
+.menu nav {
+    margin: 0px 20px; /* Márgenes horizontales de 20px */
+}
+
+/* Estilo de la lista de navegación */
+.menu nav ul {
+    display: flex; /* Flexbox para alinear enlaces horizontalmente */
+}
+
+/* Estilo de cada elemento de la lista de navegación */
+.menu nav ul li {
+    list-style: none; /* Quita los puntos de lista */
+    margin: 20px 16px; /* Márgenes alrededor de cada elemento */
+}
+
+/* Estilo de los enlaces dentro de la lista de navegación */
+.menu nav ul li a {
+    color: black; /* Color del texto de los enlaces (puede ser var(--color_text-secundary)) */
+    font-size: 16px; /* Tamaño de fuente (puede ser var(--lowText_font_size)) */
+    position: relative; /* Posicionamiento relativo para efectos */
+}
+
+/* Efecto hover sobre los enlaces del menú */
+.menu nav ul li a:hover {
+    color: #5D75A2; /* Cambia el color al verde primario en hover */
+}
+
+/* Botón de llamada a la acción (cita, contacto, etc.) */
+.btn_quote {
+    display: block; /* Muestra el botón como un bloque */
+    padding: 8px 40px; /* Relleno interno */
+    border: 2px solid #9B4DCE; /* Borde verde primario */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 500; /* Peso de fuente medio */
+    color: #5D75A2; /* Texto de color verde oscuro */
+    margin: 0px 20px; /* Margen horizontal */
+    transition: all 300ms; /* Transición suave para efectos de hover */
+}
+
+/* Efecto hover sobre el botón */
+.btn_quote:hover {
+    color: white; /* Cambia el color del texto a blanco */
+    background: #00acd2; /* Fondo verde primario */
+}
+
+/* Estilo del contenedor de redes sociales en el menú */
+.menu .socialMedia {
+    margin: 0px 10px; /* Márgenes laterales */
+}
+
+/* Estilo de los enlaces de redes sociales */
+.menu .socialMedia a {
+    margin: 0px 4px; /* Espacio entre los enlaces de redes sociales */
+}
+
+/* Estilo de las imágenes de redes sociales */
+.menu .socialMedia img {
+    width: 20px; /* Ancho fijo de 20px para los iconos */
+}
+
+
+/*Portada Inicio*/
+
+.container__cover { /* Estilo para el contenedor principal de la sección de cubierta */
+    padding-top: 100px; /* Añade un espacio de 100px en la parte superior del contenedor */
+    padding-bottom: 100px; /* Añade un espacio de 100px en la parte inferior del contenedor */
+    background: var(--main_color-secundary); /* Establece el color de fondo usando la variable secundaria definida */
+}
+
+.cover { /* Estilo para el contenedor que agrupa el contenido de la cubierta */
+    max-width: 1200px; /* Define un ancho máximo de 1200px para mantener el contenido centrado */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    margin-top: 100px; /* Añade un margen superior de 100px para separarlo del elemento anterior */
+    display: flex; /* Utiliza el modelo flexbox para organizar los elementos hijos */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    padding: 0px 20px; /* Añade un padding lateral de 20px */
+}
+
+.text__cover { /* Estilo para la sección de texto dentro de la cubierta */
+    width: 100%; /* Permite que el texto ocupe el 100% del ancho del contenedor */
+    padding-right: 150px; /* Añade un espacio de 150px a la derecha para separación de otros elementos */
+}
+
+.text__cover h1 { /* Estilo para el encabezado h1 dentro de la sección de texto */
+    font-size: 50px; /* Define un tamaño de fuente grande para el título */
+    color: var(--color_text-secundary); /* Establece el color del texto usando la variable secundaria definida */
+}
+
+.text__cover p { /* Estilo para los párrafos dentro de la sección de texto */
+    font-size: var(--text_paragraph); /* Establece el tamaño de fuente usando la variable para párrafos */
+    margin-top: 40px; /* Añade un margen superior de 40px para separación del título */
+    color: var(--color_text-tertiary); /* Establece el color del texto usando la variable terciaria definida */
+}
+
+.btn__text { /* Estilo para los botones de texto */
+    display: block; /* Hace que el botón se comporte como un bloque para ocupar todo el ancho posible */
+    width: 150px; /* Define un ancho fijo de 150px para el botón */
+    margin-top: 40px; /* Añade un margen superior de 40px para separación del contenido anterior */
+    padding: 10px 20px; /* Añade un padding de 10px vertical y 20px horizontal dentro del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    font-weight: 500; /* Establece un peso de fuente semi-negrita */
+    background: var(--main_color-primary); /* Establece el color de fondo usando la variable primaria definida */
+    color: white; /* Define el color del texto del botón como blanco */
+    border-radius: 8px; /* Redondea las esquinas del botón con un radio de 8px */
+    border: 2px solid transparent; /* Establece un borde de 2px que es transparente por defecto */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: all 300ms; /* Añade una transición suave para todos los cambios en el botón durante 300ms */
+}
+
+.btn__text:hover { /* Estilo para el botón al pasar el mouse por encima */
+    background: transparent; /* Cambia el fondo a transparente cuando se pasa el mouse */
+    border: 2px solid var(--main_color-primary); /* Establece un borde del color primario cuando se pasa el mouse */
+    color: var(--color_text-tertiary); /* Cambia el color del texto al terciario al pasar el mouse */
+}
+
+.image__cover { /* Estilo para la sección de imagen dentro de la cubierta */
+    width: 100%; /* Permite que la imagen ocupe el 100% del ancho del contenedor */
+}
+
+.image__cover img { /* Estilo para las imágenes dentro de la sección de imagen */
+    width: 550px; /* Define un ancho fijo de 550px para la imagen */
+    background-color: #5D75A2; /* Establece un color de fondo blanco para la imagen */
+}
+
+/*End Portada Inicio*/
+/* End Header */

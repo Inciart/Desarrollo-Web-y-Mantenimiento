@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre el elemento html y establece el idioma como inglés -->
+<head> <!-- Abre el elemento head donde se incluyen los metadatos y enlaces a recursos -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Indica que el contenido debe mostrarse de manera óptima en Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la configuración de la vista para dispositivos móviles -->
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Landing Page Modern - UFPSO</title> <!-- Establece el título de la página que aparece en la pestaña del navegador -->
+
+    <link rel="icon" type="image/x-icon" href="img/logo/logo_audysoftw.ico">
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlaza la hoja de estilo CSS externa -->
+
+</head>
+<body>
+    <header>
+        <!--Header - Container-->
+        <div class="container_header"> <!-- Contenedor principal del encabezado -->
+            <!--Logo-->
+            <div class="logo"> <!-- Sección del logo -->
+                <a href="#"> <!-- Enlace que contiene el logo -->
+                    <img src="imagenes/logo.jpg" alt="No se encontro la ruta de la imagen">
+                    <!-- Imagen del logo con un texto alternativo en caso de error -->
+                </a>
+            </div>
+            <!--End Logo-->
+            <!--Container - Menu-->
+            <div class="menu"> <!-- Contenedor del menú -->
+                <!--Menú-->
+                <nav> <!-- Sección de navegación -->
+                    <ul> <!-- Lista desordenada para los elementos del menú -->
+                        <li><a href="inicio.html">Inicio</a></li> <!-- Enlace a la sección Home -->
+                        <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la sección About -->
+                        <li><a href="equipo.html">Equipo</a></li> <!-- Enlace a la sección About -->
+                        <li><a href="servicios.html">Servicios</a></li> <!-- Enlace a la sección Services -->
+                        <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la sección Plans -->
+                        <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la sección Contact -->
+                        <li> <a onclick="saludo()">Registrate</a></li>
+                    </ul>
+                </nav>
+                <!--End Menu-->
+                <!--Button-->
+                <a href="#" class="btn_quote">Cotizar</a> <!-- Botón para solicitar una cotización -->
+                <!--End Button-->
+
+                <!--Container Social Media-->
+                <div class="socialMedia">
+                    <a href="#">
+                        <img src="imagenes/redes/facebook.png" alt="No se encontro la ruta de la imagen">
+                    </a>
+                    <a href="#">
+                        <img src="imagenes/redes/instagram.png" alt="No se encontro la ruta de la imagen">
+                        
+                    </a>
+                    <a href="#">
+                        <img src="imagenes/redes/gorjeo (1).png" alt="No se encontro la ruta de la imagen">
+                        
+                    </a>
+                    <a href="#">
+                        <img src="imagenes/redes/youtube.png" alt="No se encontro la ruta de la imagen">
+                    </a>
+                </div>
+                <!--End Container Social Media-->
+            </div>
+            <!--End Container - Menu-->
+        </div>
+        <!--End Header - Container-->
+    </header>
+	<main> <!-- Abre la sección principal de contenido -->
+        <img src="" alt="" id="img-load">
+        <!--Portada Inicio-->
+        <div class="container__cover" id="cover"> <!-- Contenedor para la portada principal -->
+            <div class="cover"> <!-- Sección de la cubierta que contiene el texto y la imagen -->
+                <section class="text__cover"> <!-- Sección para el texto de la cubierta -->
+                    <h1>AUDYSOFTW</h1> <!-- Título principal de la sección -->
+                    <p>En un mundo donde la tecnología avanza a pasos agigantados, nuestra empresa de software se dedica a brindarle soluciones innovadoras y eficientes que 
+					transforman la manera en que usted y su equipo trabajan. Desde la automatización de procesos hasta el desarrollo de aplicaciones personalizadas, nuestras 
+					herramientas están diseñadas para optimizar su productividad y maximizar el rendimiento.</p> <!-- Párrafo descriptivo -->
+                    <a href="#" class="btn__text-cover btn__text">Empezar</a> <!-- Botón para iniciar, con clase de estilo -->
+                </section>
+                <section class="image__cover"> <!-- Sección para la imagen de la cubierta -->
+                    <img src="img/cover/hero.png" alt=""> <!-- Imagen de portada sin texto alternativo definido -->
+                </section>
+            </div>
+        </div>
+    </main>
+	
+</body>
+</html>
