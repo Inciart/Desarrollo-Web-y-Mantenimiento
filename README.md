@@ -1,4 +1,4 @@
-# Tech Innovation - Tienda Virtual de Dispositivos Electrónicos
+# PROYECTO_PARCIAL: Tech Innovation - Tienda Virtual de Dispositivos Electrónicos
 
 Proyecto de desarrollo web estático para la asignatura **Desarrollo y Mantenimiento de Cómputo** de la Universidad Francisco de Paula Santander Ocaña (UFPSO).
 
