@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo JS Interno</title>
+
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <p style="width: auto;">Probando pagina con JS</p>
+            <button onclick="mostrarMesaje()"> click here </button>
+            <h2>que se puede hacer con JS</h2>
+            <p id ="demo"> haz click <html></html></p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = 'buen chico'"></button>
+            
+            <h2>javascript puede pasar el contenido</h2>
+            <p id ="demo"> haz click <html></html></p>
+            <button type="button" onclick="document.getElementById('demo').style.display='block'"></button>
+            <footer>
+
+            </footer>
+        </main>
+
+        <script>
+        function mostrarMesaje(){
+            alert("Hola Mundo, estos en clase de mantenimiento y desarrollo web");
+        }
+        </script>
+    </body>
+</html>
