@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página - Réplica 6 secciones</title>
+
+  <!-- Tipografía (puedes cambiarla por la que uses) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">JS</div>
+        <div class="brand-text">
+          <div class="brand-name">JsNexus</div>
+          <div class="brand-sub">Diseño & Tecnología</div>
+        </div>
+      </div>
+      <nav class="nav-hide">
+        <span class="nav-item">Inicio</span>
+        <span class="nav-item">Productos</span>
+        <span class="nav-item">Servicios</span>
+      </nav>
+      <button class="btn-cta">Cotizar</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 1: HERO / Portada (imagen grande con overlay + texto centrado) -->
+    <section class="section hero">
+      <div class="hero-bg" style="background-image: url('section-1.jpeg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1>Innovación que conecta</h1>
+        <p class="lead">Soluciones tecnológicas pensadas para tu negocio — diseño, performance y estrategia.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary">Ver catálogo</a>
+          <a class="btn btn-outline">Servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: BLOQUE CON CARDS (reproduce la segunda imagen) -->
+    <section class="section cards">
+      <div class="container cards-grid">
+        <div class="card card-large">
+          <img src="section-2.png" alt="section 2" />
+          <div class="card-body">
+            <h3>Diseño integral</h3>
+            <p>Branding, UI/UX y presencia digital con foco en conversión.</p>
+          </div>
+        </div>
+
+        <div class="card card-stack">
+          <div class="stack-item"><h4>Plan Básico</h4><p>Landing simple — 1 semana</p></div>
+          <div class="stack-item"><h4>Plan Pro</h4><p>Tienda + SEO — 3 semanas</p></div>
+          <div class="stack-item"><h4>Soporte</h4><p>Mantenimiento y analytics</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: PANEL CON TEXTO Y FOTO (imagen a la derecha) -->
+    <section class="section split">
+      <div class="container split-inner">
+        <div class="split-text">
+          <h2>Desarrollos hechos para escalar</h2>
+          <p>Arquitectura robusta, rendimiento y código mantenible. Nos importa lo que viene después.</p>
+          <ul class="list-features">
+            <li>Performance first</li>
+            <li>Escalabilidad</li>
+            <li>Accesibilidad y SEO</li>
+          </ul>
+        </div>
+        <div class="split-image">
+          <img src="section-3.png" alt="desarrollo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: TESTIMONIOS / CITA (estética tipo tarjeta con fondo oscuro) -->
+    <section class="section testimonial">
+      <div class="testimonial-bg" style="background-image: url('section-4.png')"></div>
+      <div class="testimonial-overlay"></div>
+      <div class="container testimonial-inner">
+        <blockquote>
+          “Excelente trabajo: aumento de conversión y tiempo de carga reducido. Entregaron todo en plazo.”
+        </blockquote>
+        <div class="test-author">
+          <div class="avatar">A</div>
+          <div>
+            <strong>Andrés G.</strong>
+            <div class="small">CEO — Tienda X</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: GALERÍA / PARALLAX-LIKE -->
+    <section class="section gallery">
+      <div class="container">
+        <h2>Proyectos recientes</h2>
+        <div class="gallery-grid">
+          <div class="g-item"><img src="section-5.png" alt="proj 1" /></div>
+          <div class="g-item"><img src="section-5.png" alt="proj 2" /></div>
+          <div class="g-item"><img src="section-5.png" alt="proj 3" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: CTA FINAL / FOOTER-LIKE -->
+    <section class="section final-cta">
+      <div class="container final-inner">
+        <div class="final-copy">
+          <h2>Listo para empezar?</h2>
+          <p>Hablemos. Planeamos, diseñamos y ejecutamos.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary large">Solicitar propuesta</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 JsNexus</div>
+      <div class="small muted">Diseño replicado a partir de las imágenes provistas.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

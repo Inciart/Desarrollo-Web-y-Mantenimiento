@@ -29,6 +29,7 @@
 .container_all {
     background: url('imagenes/fondos/composicion-de-suministros-de-dispositivos-de-vista-superior.jpg') no-repeat center center/cover;
     transition: all 900ms;
+    
 }
 
 .container_header {
@@ -120,6 +121,15 @@
     width: 20px;
 }
 
+.input-checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
 /* Contenedor del cover/hero */
 .container_cover {
     padding-top: 100px;
@@ -158,7 +168,6 @@
     text-decoration: none;
 }
 
-/* Botón de texto dentro del cover */
 .btn_text {
     display: block;
     width: 10%;
