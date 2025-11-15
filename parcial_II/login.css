@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Reset y configuración base */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@
     --box_shadow_primary: 0px 6px 58px -20px rgba(0,0,0,0.2);
 }
 
-/* Estilos del contenedor principal de la página */
+
 .container_all {
     background: url('imagenes/fondos/composicion-de-suministros-de-dispositivos-de-vista-superior.jpg') no-repeat center center/cover;
     transition: all 900ms;
@@ -60,7 +59,7 @@
     color: white;
 }
 
-/* Menú de navegación */
+/* Men de navegacion */
 .menu {
     display: flex;
     align-items: center;
@@ -230,7 +229,25 @@
     position: relative;
     z-index: 1;
 }
-
+.back-button {
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 455px;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    
+    }
+    .btn-back {
+        color: white;
+        font-size: 14px;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0,   0, 0.2);
+        
+    }
 .login-hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     padding: 60px 40px;
