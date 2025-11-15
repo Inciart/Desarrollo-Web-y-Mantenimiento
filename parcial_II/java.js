@@ -1,34 +1,25 @@
-document.getElementById('hamburgerBtn').addEventListener('click', function(e) {
-    e.stopPropagation();
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('open');
+
+let contador = 0;
+const contadorElemento = document.getElementById('contador-carrito');
+const botonesAgregar = document.querySelectorAll('.boton-carrito');
+botonesAgregar.forEach(boton => {
+    boton.addEventListener('click', function(e) {
+        e.preventDefault();
+        contador++;
+        contadorElemento.textContent = contador;
+        contadorElemento.classList.add('actualizado');
+        setTimeout(() => contadorElemento.classList.remove('actualizado'), 300);
     });
-
-    // Cerrar al hacer clic fuera
-    document.addEventListener('click', function(e) {
-    const sidebar = document.getElementById('sidebar');
-    const hamburger = document.getElementById('hamburgerBtn');
-
-    if (sidebar.classList.contains('open') && 
-    !sidebar.contains(e.target) && 
-        !hamburger.contains(e.target)) {
-        sidebar.classList.remove('open');
-    }
-    });
-
-    // Evitar que clic en menú cierre
-    document.getElementById('sidebar').addEventListener('click', function(e) {
-    e.stopPropagation();
-    });
-
-    // Submenús desplegables
-    function toggleSubmenu(e, id) {
+});
+// === MENÚ DEL USUARIO ===
+const btnUsuario = document.getElementById('btn-usuario');
+const menuUsuario = document.getElementById('menu-usuario');
+btnUsuario.addEventListener('click', function(e) {
     e.preventDefault();
-    e.stopPropagation();
-    
-    const submenu = document.getElementById(id);
-    const toggle = e.target;
-    
-    submenu.classList.toggle('show');
-    toggle.classList.toggle('open');
+    menuUsuario.classList.toggle('mostrar');
+});
+document.addEventListener('click', function(e) {
+    if (!btnUsuario.contains(e.target) && !menuUsuario.contains(e.target)) {
+        menuUsuario.classList.remove('mostrar');
     }
+});
