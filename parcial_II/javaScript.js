@@ -1,7 +1,6 @@
 window.addEventListener("load", function () {
   const boton = document.getElementById("Mensaje");
 
-  
   if (boton) {
     boton.addEventListener("click", function (event) {
       // Prevent form submission to show alert
@@ -26,6 +25,44 @@ window.addEventListener("load", function () {
       }
     });
   }
+
+  //para registro, comprobando campos
+  /* 
+  
+   const botonRegistro = document.getElementById("btnRegistro");
+
+  if (botonRegistro) {
+    botonRegistro.addEventListener("click", function (event) {
+      const usuario = document.querySelector('.form-name input[type="text"]');
+      const correo = document.querySelector(
+        '.register-email input[type="email"]'
+      );
+      const clave = document.querySelector(
+        '.register-clave  input[type="password"] '
+      );
+      const confirmClave = document.querySelector(
+        '.remember-me input[type="password"]'
+      );
+
+      if (
+        usuario.value.trim() === "" ||
+        correo.value.trim() === "" ||
+        clave.value.trim() === ""
+      ) {
+        alert("Todos los campos de registro son obligatorios");
+        event.preventDefault();
+      } else if (!correo.value.includes("@")) {
+        alert("Correo inválido");
+        event.preventDefault();
+      } else if (clave.value.length < 6) {
+        alert("La contraseña debe tener mínimo 6 caracteres");
+        event.preventDefault();
+      } else {
+        alert("Registro exitoso");
+      }
+    });
+  }
+  */
 });
 
 //loginForm
