@@ -7,6 +7,7 @@
     <title>TECH - Registro</title>
     <link rel="icon" type="image/x-icon" href="imagenes/logos/freepik__background__62164.png">
     <link rel="stylesheet" href="login.css">
+    <script src="form.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,17 +18,15 @@
     </div>
     <div class="login-container">
         <div class="login-wrapper">
-            <!-- Hero Section -->
             <div class="login-hero">
                 <h2>Estas a punto de<br>Ser parte <br>De algo<span class="highlight">Importante</span></h2>
             </div>
 
-            <!-- Login Form -->
             <div class="login-form-container">
                 <h3>Registrarte</h3>
                 <p>Igresa tus credenciales para ingresar a la cuenta</p>
 
-                <form id="loginForm">
+                <form id="loginForm" class="form" novalidate>
                     <div class="form-group">
                         <label for="input">Nombres y Apellidos</label>
                         <input type="text" id="email" name="email" placeholder="Pablo Pepito Perez" required>
@@ -47,8 +46,8 @@
                         <input class="check" type="checkbox" id="remember" name="remember">
                         <label for="remember">Recordar al iniciar sesion</label>
                     </div>
-
-                    <button type="submit" class="btn-login">Registrarse</button>
+                    
+                    <button type="submit" class="btn-login" id="Mensaje">Registrarse</button>
 
                     <div class="signup-link">
                         ¿Ya haz creado una cuenta? <a href="login.html">¡INICIA YA!</a>
@@ -57,7 +56,6 @@
             </div>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
