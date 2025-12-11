@@ -40,25 +40,25 @@
                 </li>
             </ul>
             <div class="buscador">
-                <input type="text" placeholder="Buscar" required>
+                <input type="text" id="input-busqueda" placeholder="Buscar productos..." autocomplete="off">
                 <div class="btn">
-                    <img src="iconos/buscar.png" alt="">
+                    <img src="iconos/buscar.png" alt="Buscar">
                 </div>
             </div>
             <div class="compra_usuario">
                 <div class="usuario-contenedor">
-                    <a href="#" class="usuario" id="btn-usuario">
+                    <a href="#" id="btn-usuario" class="usuario">
                         <img src="iconos/user.png" alt="Usuario">
                     </a>
-                    <div class="menu-usuario" id="menu-usuario">
-                        <a href="#" class="opcion-usuario">
-                            <span>Perfil</span>
-                        </a>
-                        <a href="inicio.html" class="opcion-usuario cerrar-sesion">
-                            <span>Cerrar sesión</span>
-                        </a>
-                    </div>
+                <div class="menu-usuario" id="menu-usuario">
+                    <a href="perfil.html" class="opcion-usuario">
+                        <span>Perfil</span>
+                    </a>
+                    <a href="inicio.html" class="opcion-usuario cerrar-sesion">
+                        <span>Cerrar sesión</span>
+                    </a>
                 </div>
+            </div>
                 <a href="#" class="carrito_compras">
                     <img src="iconos/icons8-carrito-de-compras-50.png" alt="Carrito">
                     <span id="contador-carrito" class="contador-carrito">0</span>
@@ -83,7 +83,7 @@
                                     <span class="precio-anterior">$3.800.000</span>
                                     <span class="precio-actual">$3.040.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="portatiles">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -100,7 +100,7 @@
                                     <span class="precio-anterior">$1.900.000</span>
                                     <span class="precio-actual">$1.615.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="telefonos">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -117,7 +117,7 @@
                                     <span class="precio-anterior">$990.000</span>
                                     <span class="precio-actual">$792.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="tablets">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -133,7 +133,7 @@
                                     <span class="precio-anterior">$1.200.000</span>
                                     <span class="precio-actual">$1.020.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="impresoras">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -151,7 +151,7 @@
                                     <span class="precio-anterior">$2.000.000</span>
                                     <span class="precio-actual">$1.600.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="monitores">Añadir al carrito</button>
                             </div>
                         </article>
                     </a>
@@ -167,7 +167,7 @@
                                     <span class="precio-anterior">$250.000</span>
                                     <span class="precio-actual">$212.500</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="accesorios">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -183,7 +183,7 @@
                                     <span class="precio-anterior">$2.900.000</span>
                                     <span class="precio-actual">$2.320.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="electrodomesticos">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -200,7 +200,7 @@
                                     <span class="precio-anterior">$1.600.000</span>
                                     <span class="precio-actual">$1.360.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="sonidos">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
@@ -218,7 +218,7 @@
                                     <span class="precio-anterior">$3.900.000</span>
                                     <span class="precio-actual">$3.120.000</span>
                                 </div>
-                                <button class="boton-carrito">Añadir al carrito</button>
+                                <button class="boton-carrito" data-id="televisores">Añadir al carrito</button>
                             </div>
                         </a>
                     </article>
