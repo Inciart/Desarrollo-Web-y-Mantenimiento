@@ -12,6 +12,7 @@ header{
     background-size: 200px;
     background-position: center;
 }
+
 .barra{
     width: 80%;
     display: flex;
@@ -235,6 +236,7 @@ body {
     background: linear-gradient(180deg, #2A2A2A, #1A1A1A);
     color: white;
     text-align: center;
+    height: 100%;
 }
 
 .titulo-seccion {
@@ -252,6 +254,12 @@ body {
     background: rgb(245, 150, 34);
     margin: 15px auto 0;
     border-radius: 2px;
+}
+
+.menu-usuario.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .fila-productos {
@@ -344,7 +352,6 @@ body {
     height: 48px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -654,4 +661,14 @@ main, .seccion-ofertas {
 
 .contador-carrito.actualizado {
     transform: scale(1.3);
+}
+
+.boton-carrito.en-carrito {
+    background: #e74c3c !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
+}
+
+.boton-carrito.en-carrito:hover {
+    background: #c0392b !important;
 }

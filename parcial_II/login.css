@@ -258,6 +258,7 @@
     overflow: hidden;
 }
 
+//creacion de los circulos difuminadosgit 
 .login-hero::before {
     content: '';
     position: absolute;
